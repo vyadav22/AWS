@@ -12,7 +12,7 @@ from boto.exception import SQSError
 
 conn = boto.sqs.connect_to_region("eu-east-1", aws_access_key_id='KIAIR7EH3TNSTDUCWKA', aws_secret_access_key='t2FZT5mrLYy8gX7kS1q0p4ObQYXTwGnaiUm+rxHZ')
 
-q = conn.crete_queue("C12386676",120)
+q = conn.create_queue("C12386676",120)
 
 rs = conn.get_all_queues()
 for q in rs:
